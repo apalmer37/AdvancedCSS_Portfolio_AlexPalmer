@@ -1,0 +1,75 @@
+/* Makes all future box sizing to border box, and sets default margin and padding to 0 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header code */
+
+/* Changes the header background. Displays child elements in flex row with justified space in between, and removes list. */
+header {
+    background-color:lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 10px 0 0;
+}
+
+/* Gives h1 a colored background and text. Adjusts sizing and positioning in header accordingly. */
+header h1 {
+    margin: 5px 10px 20px 0;
+    background-color: darkslategray;
+    border-radius: 10%;
+    color: whitesmoke;
+    position: relative;
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 1.25;
+}
+
+/* Displays the header nav ul flexed to be side by side. Justify content to the end and centered with no list style */
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+/* Adds padding internally for list items */
+header nav ul li {
+    padding: 10px 15px 10px 10px;
+    margin: 5px 10px 20px 5px;
+}
+
+/* Adds color, bold weight, bottom border to nav links. */
+header nav ul li a {
+    color: darkslategray;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid darkslategray;
+}
+
+header nav ul li a:hover {
+    color: ivory;
+}
+
+/* body {
+
+}
+
+
+footer {
+
+} */
+
+.headshot {
+    background-image: ("./assets");
+}
+
+
+
+
