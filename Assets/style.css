@@ -5,8 +5,41 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
-/* Header code */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: ivory;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+/* Header */
 
 /* Changes the header background. Displays child elements in flex row with justified space in between, and removes list. */
 header {
@@ -56,19 +89,114 @@ header nav ul li a {
 header nav ul li a:hover {
     color: ivory;
 }
+/* End Header */
 
-/* body {
+/* Image */
 
+.center-img {
+    height: 300px;
+    max-width: 300px;
+    margin: 1% 0% 1% 37%;
+    object-fit: contain;
+    position: sticky;
+    align-content: center;
+}
+
+/* About Section */
+
+.section-about {
+    padding: 40px 15px 20px 15px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  .about {
+    margin-top: 0;
+  }
+  
+  .title {
+    margin: 5px 15px 5px 5px;
+    text-align: end;
+    color: darkslategray;
+  }
+  
+  .title h1 {
+    font-size: 50px;
+    display: inline-block;
+    z-index: 0;
+    border-right: 5px solid darkslategray;
+  }
+  
+  .right p {
+    line-height: 2;
+    color: darkslategray;
+  }
+
+  /* End About Section */
+
+  /* Work Section */
+
+  .section-work {
+    padding: 40px 15px 20px 15px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+ .title-work {
+    margin: 5px 15px 5px 5px;
+    text-align: end;
+    color: darkslategray;
+  }
+
+  .title-work h1 {
+    font-size: 50px;
+    display: inline-block;
+    z-index: 0;
+    border-right: 5px solid darkslategray;
+  }
+
+  .container-work {
+  flex: 4;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 
-footer {
+  .card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+  .card header {
+    padding: 20px;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  .card img {
+    width: 100%;
+    min-width: 400px;
+  }
 
-} */
+  
 
-.headshot {
-    background-image: ("./assets");
-}
+
+
+
 
 
 
