@@ -10,7 +10,6 @@ html {
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: ivory;
     color: black;
     position: relative;
@@ -18,14 +17,9 @@ body {
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    margin: 0 20px;
 }
-
-.container {
-    max-width: 2000px;
-    margin: 0 auto;
-  }
 
   a {
     text-decoration: none;
@@ -104,12 +98,10 @@ header nav ul li a:hover {
 
 /* About Section */
 
-.section-about {
+section {
     padding: 40px 15px 20px 15px;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
     justify-content: space-between;
     align-items: center;
 }
@@ -127,59 +119,38 @@ header nav ul li a:hover {
   .title h1 {
     font-size: 50px;
     display: inline-block;
-    z-index: 0;
-    border-right: 5px solid darkslategray;
   }
   
   .right p {
     line-height: 2;
     color: darkslategray;
+    border-left: 5px solid darkslategray;
+    padding: 0px 0px 0px 10px;
+    font-size: 20px;
   }
 
   /* End About Section */
 
   /* Work Section */
 
-  .section-work {
-    padding: 40px 15px 20px 15px;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
- .title-work {
-    margin: 5px 15px 5px 5px;
-    text-align: end;
-    color: darkslategray;
-  }
-
-  .title-work h1 {
-    font-size: 50px;
-    display: inline-block;
-    z-index: 0;
-    border-right: 5px solid darkslategray;
-  }
-
   .container-work {
-  flex: 4;
-  background-color: #fff;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 500fr));
+    gap: 25px;
+    border-left: 5px solid darkslategray;
+    padding: 0px 0px 0px 10px;
 }
-
 
   .card {
-    flex: 1 0 0;
     padding: 10px;
     text-align: center;
     border-style: solid;
     border-width: 1px;
   }
+
+  .card:first-of-type {
+    grid-column: 1 / -1;
+ }
   
   .card header {
     padding: 20px;
@@ -191,6 +162,29 @@ header nav ul li a:hover {
     width: 100%;
     min-width: 400px;
   }
+
+  /* End Work Section */
+
+  footer {
+    padding: 40px 15px 20px 15px;
+    display: grid; 
+    grid-template-columns: 1fr 4fr;
+    margin: 0 20px;
+    color: darkslategray;
+  }
+
+
+  footer div.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-left: 5px solid darkslategray;
+    text-decoration: underline;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+
 
   
 
