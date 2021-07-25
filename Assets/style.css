@@ -27,6 +27,8 @@ main {
   
   img {
     max-width: 100%;
+    justify-content: center;
+    padding-top: 25px;
   }
   
   li {
@@ -43,6 +45,7 @@ header {
     justify-content: space-between;
     list-style: none;
     padding: 10px 10px 0 0;
+    text-align: center;
 }
 
 /* Gives h1 a colored background and text. Adjusts sizing and positioning in header accordingly. */
@@ -146,6 +149,7 @@ section {
     text-align: center;
     border-style: solid;
     border-width: 1px;
+    justify-content: center;
   }
 
   .card:first-of-type {
